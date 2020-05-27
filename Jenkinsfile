@@ -13,7 +13,7 @@ node {
     stage('Clone sources') {
     	//git url: 'https://github.com/lorenzo-rangel/techtalks.git'
 	print "my checkout"
-	checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'GitHubGlobant', url: 'https://github.com/lorenzo-rangel/jenkins.git']]])
+	checkout([$class: 'GitSCM', branches: [[name: '*/master']], doGenerateSubmoduleConfigurations: false, extensions: [], submoduleCfg: [], userRemoteConfigs: [[credentialsId: 'lorenzo.globant', url: 'https://github.com/lorenzo-rangel/jenkins.git']]])
     sh "ls -la"
     sh "pwd"
     }
