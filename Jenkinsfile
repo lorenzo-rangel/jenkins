@@ -1,4 +1,4 @@
-// COMMENT TO TEST POLL SCM 27/05/2020 FOR WEBHOOK 02:45 am
+// COMMENT TO TEST POLL SCM 27/05/2020 FOR WEBHOOK 02:50 am
 node {
     // Get Artifactory server instance, defined in the Artifactory Plugin administration page.
     def server = "myservername"
